@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>2D Transform Example</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A simple example showing how to rotate an element" />
+    
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: #575;
+            /*ROTATING THE .BOX AROUND Y AXIS IN ORDER TO 
+            SHOWCASE THE PERSPECTIVE*/
+            -webkit-transform: rotateY(60deg);
+            -ms-transform: rotateY(60deg);
+            transform: rotateY(90deg);
+            
+            /*STARTING TRANSFORMS
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(25deg);
+            STARTING TRANSFORM-ORIGIN
+            -webkit-transform-origin: 0 0 ;
+            -ms-transform-origin: 0 0 ;
+            transform-origin: 0 0 ;
+            
+            border-radius: 50%;
+            outline: 1px solid blue;
+            padding: 30px;
+            background-clip:content-box;
+            
+        }
+        .one {
+            background: #575;
+            -webkit-transform:rotate(45deg);
+            -ms-transform:rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .two {
+            background: #755;
+             -webkit-transform:rotate(45deg);
+            -ms-transform:rotate(45deg);
+            transform: rotate(45deg);*/
+        }
+        
+        .container {
+            width: 200px;
+            height: 200px;
+            outline: 1px solid red;
+            -webkit-perspective: 130;
+            -ms-perspective: 50;
+            perspective: 50;
+        }
+    </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
